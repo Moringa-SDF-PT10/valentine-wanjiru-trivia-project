@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just-A-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="start-page">
+            <div id="heading">
+                <h1>Test your Intelligence!</h1>
+            </div>
+            <form action="">
+                <p>
+                    <label for="number-of-questions">Number of Questions:</label>
+                    <br>
+                    <input type="number" name="questions" id="questions" min="5" max="50" step="1" value="5" >
+                </p>
+                <p>
+                    <label for="category">Select Category:</label><br>
+                    <select name="category" id="category">
+                        <option value="any">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="12">Music</option>
+                        <option value="16">Board Games</option>
+                        <option value="19">Mathematics</option>
+                        <option value="18">Computers</option>
+                        <option value="25">Art</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="difficulty">Select Difficulty:</label><br>
+                    <select name="difficulty" id="difficulty">
+                        <option value="any">Any Difficulty</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="type">Select Type:</label><br>
+                    <select name="type" id="type">
+                        <option value="any">Any Type</option>
+                        <option value="multiple">Multiple Choice</option>
+                        <option value="boolean">True/ False</option>
+                    </select>
+                </p>
+            </form>
+            <button id="start-button" type="button">Start Quiz</button>
+        </div>
+
+        <div id="question-container">
+        <div id="quiz-page" >
+            <h3 id="question">
+                <ol id="options">
+                </ol>
+            </h3>
+
+        </div>
+    </div>
+
+    <div id="score-container">
+        <h2></h2>
+        <p><span id="final-score"></span></p>
+        <!-- <button id="restart-button"></button> -->
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('math\ image2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(218, 213, 205);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+
+   }
+   body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: blur(8px); /* Adjust the blur intensity */
+    z-index: -1; /* Ensure it stays behind the content */
+}
+/* #container {
+    background-color: hsla(60, 93%, 77%, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(211, 16, 16, 0.1);
+    width: 80%;
+    max-width: 600px;
+} */
+
+#start-page, #quiz-page {
+    background-color: hsla(60, 93%, 77%, 0.7);
+    padding: 2rem 3rem;
+    margin: 3rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    animation: fadeIn 0.5s ease-in;
+    color: #3f95f1;
+}
+
+
+button,
+ #finish-button {
+    background-color: #3f95f1;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover,
+#finish-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+input[type = "radio"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+label {
+    font-size: 25px;
+    display: block;
+    margin-bottom: 0.3rem;
+    color: #486453;
+}
+input[type = "number"], select{
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+ol {
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  #feedback {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+  }
+
+.answer-selected {
+    background-color: #96f1ba;
+    transition: background-color 0.3s ease;
+}
